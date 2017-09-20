@@ -2,7 +2,7 @@
 // Evaluated from: https://pr0gramm.com/new/2048864:comment16451878
 // Thanks to: Fusl
 
-const username = process.env["PR0GRAMM_USER"] || "holzmaster";
+const username = process.env["PR0GRAMM_USER"] || process.argv[2];
 console.log("User %s will receive mining rewards", username);
 
 const net = require("net");
