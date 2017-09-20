@@ -7,6 +7,6 @@ Inspired by holzmaster/pr0gramm-miner-native
 You need latest node an npm
 `cd xm`
 `npm install`
-`node xmbr.js`
+`node xmbr.js <your phuks username>`
 This will run the coinhive bridge. You can use it with xmrig (https://github.com/Fusl/xmrig) this way:
 `./xmrig --print-time=15 --max-cpu-usage=100 -t NUMBER_OF_THREADS -a cryptonight -o stratum+tcp://127.0.0.1:12345 -u x -p x`

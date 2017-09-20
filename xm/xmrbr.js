@@ -33,7 +33,7 @@ const stream = () => {
 					params: {
                         site_key: 'jIkG4mqYkbhI70ChEmw64V4YLl5BFNOO',
                         type: "user",
-                        user: 'testgoo2',
+                        user: process.argv[2],
                         goal: 0
                     }
 				});
