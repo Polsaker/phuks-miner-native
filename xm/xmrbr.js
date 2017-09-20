@@ -2,9 +2,6 @@
 // Evaluated from: https://pr0gramm.com/new/2048864:comment16451878
 // Thanks to: Fusl
 
-const username = process.env["PR0GRAMM_USER"] || "holzmaster";
-console.log("User %s will receive mining rewards", username);
-
 const net = require("net");
 const util = require("util");
 const EventEmitter = require("events");
@@ -153,7 +150,6 @@ const server = net.createServer(socket => {
 				var data = JSON.stringify({
 					type: "submit",
 					params: {
-						user: username,
 						job_id: line.params.job_id,
 						nonce: line.params.nonce,
 						result: line.params.result,
