@@ -2,6 +2,8 @@
 // Evaluated from: https://pr0gramm.com/new/2048864:comment16451878
 // Thanks to: Fusl
 
+"use strict";
+
 const net = require("net");
 const util = require("util");
 const EventEmitter = require("events");
